@@ -1,0 +1,64 @@
+@import './constants.css';
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAN Party by LSAC Iasi</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <!-- FONTS Bebas Neue ADOBE-->
+        <link rel="stylesheet" href="https://use.typekit.net/ylw3ybq.css">
+        <!-- FONTS Bebas Neue ADOBE-->  
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/inscrieri.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <script src="js/countdown.js"></script>
+
+    </head>
+
+    <body>
+        
+        <!-- ============ NavBar START ============ -->
+
+        <navbar class="navbar">
+            <a href="index.html"><img class="nav-logo" src="img/Sigle/Logo LP blue.png" alt="logo"></a>
+
+            <div class="mobile-nav" onclick="mobileToggle(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+
+            <div class="nav-buttons" id="n-btn">
+                <a href="index.html">Home</a>
+                <a href="about.html">Despre</a>
+                <a href="regulament.html">Regulament</a>
+                <a style=" color:var(--darkbaby-blue);" href="inscrieri.html">Inscrieri</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </navbar>
+
+        <!-- ============ NavBar END ============ -->
+        <!-- ============ Flexbox START ========= -->
+    <div class="big-div">
+        <div class="flex-container">
+            <div class="element">
+                <a style=" text-transform: none;" href="https://forms.gle/nUsogfXYadnytKpj6">
+                    <div class="reg-now">Inscrie-te acum!</div>
+                </a>
+            </div>
+            <div class="element">
+                <div class="about-text">
+                <h1>PRECIZARI</h1>
+                <p>•	Fiecare membru al echipelor este obligat sa citeasca in intregime <a style=" text-transform: none; color: var(--darkbaby-blue);"href="regulament.html"><span><u>regulamanetul</u></span></a> inainte de a se inscrie.</p>
+                <p>•	Perioada de inscrieri: <span>7 Martie – 16 Martie</span> </p>
+                <p>•	Competitia pentru <span>League of Legends</span> are loc pe 19 Martie. <span>Counter-Strike: Global Offensive</span> are loc pe 20 Martie.</p>
+            </div>
+        </div>
+    </div>
+
+        <script src="js/navbar.js"></script>
+    
+    </body>
+</html>

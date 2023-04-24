@@ -1,0 +1,140 @@
+@import './constants.css';
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+    background-color: #413E3E;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.nav-logo {
+    width: 130px;
+    height: 50px;
+    margin-left: 2em;
+}
+
+.nav-buttons {
+    width: fit-content;
+    font-size: 23px;
+    margin-right: 1.5em;
+}
+
+.nav-buttons a {
+    color: #EFEDF0;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.nav-buttons a:last-child {
+    margin-right: 0;
+}
+
+.nav-buttons a:before {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 100%;
+    width: 0;
+    height: 2px;
+    background-color: var(--cement-white);
+    transition: width .3s ease-in-out;
+}
+
+.nav-buttons a:hover:before {
+    width: 100%;
+}
+
+/* MOBILE NAV */
+
+.mobile-nav {
+    display: none;
+    cursor: pointer;
+    margin-right: 1.5rem; 
+    position: relative;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-8px, -6px);
+  }
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: var(--cement-white);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+  }
+
+@media screen and (max-width: 600px)
+{
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-buttons {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        background-color: var(--carbon-black);
+        align-items: right;
+    }
+
+    .nav-buttons a {
+        display: block;
+        color: #EFEDF0;
+        text-decoration: none;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-buttons a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-buttons a:hover {
+        border-bottom: 1px solid var(--darkbaby-blue);
+    }
+
+    .nav-buttons a:hover:before
+    {
+        width: 0;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+    }{
+}
+
+@media (min-width: 600px)
+{
+    .nav-buttons {
+        display: block;
+    }
+}
+}
+.nav-buttons a:hover
+{
+    color: #1A9BF6;
+}
+

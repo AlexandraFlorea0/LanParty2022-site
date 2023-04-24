@@ -1,0 +1,145 @@
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.button {
+    display: block;
+    color: white;
+    padding: 10px 60px;
+    border: 4px solid white;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.font {
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-style: normal;
+}
+.font.bold {
+    font-weight: 700;
+}
+.font.light{
+    font-weight: 200;
+}
+.font.thin{
+    font-weight: 100;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    min-height: calc(100vh - 90px); 
+    padding-top: 90px; 
+    color: white;  
+}
+
+.contact-area {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    text-align: center; padding-top: 150px; 
+    font-size: 3rem;
+}
+
+.coordonator-area {
+    display: flex; 
+    flex-direction: column
+}
+
+.contact-button-area {
+    display: flex; 
+    align-items: center;"
+}
+
+.follow-area {
+    display: flex; 
+    flex: 1; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center
+}
+
+.follow-area-background {
+    position: absolute;
+    bottom: 0;
+    width: 50rem;
+    left: calc(100% / 2 - 25rem);
+    z-index: -1
+}
+
+.follow-area-logo {
+    width: 3rem;
+    padding: 0px 5px;
+}
+
+body:before {
+    content: 'CONTACT';
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin-top: 90px;
+    min-height: calc(100vh - 90px);
+
+    align-items: center;
+    justify-content: center;
+
+    color: #EFEDF0;
+    font-size: 400px;
+    font-weight: bold;
+    opacity: 0.1;
+}
+
+@media (max-width: 1100px){
+    .contact-area {
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+    .contact-button-area {
+        justify-content: center;
+        order: 3;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+    
+    .follow-area-background {
+        width: 30rem;
+        left: calc(100% / 2 - 15rem);
+    }
+}
+
+@media (max-width: 850px) {
+    body::before{
+        content: '';
+        display: none;
+    }
+    .contact-area {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-top: 0px;
+        font-size: 2.3rem!important;
+    }
+
+    .coordonator-area {
+        padding-top: 75px
+    }
+
+    .follow-area-background {
+        width: 20rem;
+        left: calc(100% / 2 - 10rem);
+    }
+}

@@ -1,1 +1,1 @@
-# LanParty2022-site
+# ocatarama.github.io
